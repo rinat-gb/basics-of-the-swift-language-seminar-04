@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Debug basics-of-the-swift-language-seminar-04",
+            "program": "${workspaceFolder:basics-of-the-swift-language-seminar-04}/.build/debug/basics-of-the-swift-language-seminar-04",
+            "args": [],
+            "cwd": "${workspaceFolder:basics-of-the-swift-language-seminar-04}",
+            "preLaunchTask": "swift: Build Debug basics-of-the-swift-language-seminar-04"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Release basics-of-the-swift-language-seminar-04",
+            "program": "${workspaceFolder:basics-of-the-swift-language-seminar-04}/.build/release/basics-of-the-swift-language-seminar-04",
+            "args": [],
+            "cwd": "${workspaceFolder:basics-of-the-swift-language-seminar-04}",
+            "preLaunchTask": "swift: Build Release basics-of-the-swift-language-seminar-04"
+        }
+    ]
+}
