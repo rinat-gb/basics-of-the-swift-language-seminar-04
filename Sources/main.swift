@@ -65,18 +65,20 @@ class Pizzeria {
         for (num, pizza) in pizzas.enumerated() {
             res += "\n" + String(num + 1) + ". " + pizza.pizzaKind.getPizzaName()
 
-            if !pizza.additions.isEmpty {
-                res += " (с дополнениями):"
-
-                for addition in pizza.additions {
-                    res += "\n\t" + addition.getAdditionName()
-                }
-            }
-
             if pizza.isTestoTonkoe {
                 res += ", тонкое тесто"
             } else {
                 res += ", толстое тесто"
+            }
+
+            if pizza.additions.isEmpty {
+                res += ", стандартная"
+            } else {
+                res += ", с дополнениями:"
+
+                for addition in pizza.additions {
+                    res += "\n\t" + addition.getAdditionName()
+                }
             }
         }
         return res
